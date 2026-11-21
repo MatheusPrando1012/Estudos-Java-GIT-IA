@@ -1,19 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+    double nota1 = 7.4;
+    double nota2 = 5.0;
+    double nota3 = 8.2;
 
-        String nome = "Matheus Prando";
-        int idade = 21;
-        double altura = 1.86;
-        boolean estudaJava = true;
+    double mediaNotas = (nota1 + nota2 + nota3) / 3;
+        System.out.printf("media esse semestre: %.2f%n ", mediaNotas);
 
-        System.out.println("Meu nome é " + nome + " tenho " + idade + " anos e " + altura + " de altura");
-        if (estudaJava == true) {
-            System.out.println("Esqueci de mencionar que estudo Java/Programação");
-        } else {
-            System.out.println("Não estudo pra nada");
-        }
     }
-
 
 }
 
