@@ -1,11 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-    double nota1 = 7.4;
-    double nota2 = 5.0;
-    double nota3 = 8.2;
+        System.out.println("Conversao de temperatura");
+        double C1 = 37.5;
+        double conversao1 = C1 * 9 / 5 + 32;
+        System.out.println("A conversao de: " + C1 + "G, para Fahrenheit ficou em: " + conversao1 + "F" );
 
-    double mediaNotas = (nota1 + nota2 + nota3) / 3;
-        System.out.printf("media esse semestre: %.2f%n ", mediaNotas);
+        System.out.println("Conversao de temperatura");
+        int C2 = 27;
+        int conversao2 = C2 * 9 / 5 + 32;
+        System.out.println("A conversao de: " + C2 + "G, para Fahrenheit ficou em: " + conversao2 + "F" );
 
     }
 
