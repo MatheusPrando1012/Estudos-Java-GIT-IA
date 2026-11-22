@@ -1,17 +1,19 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double produto = 19.99;
-        int qtdProduto = 24;
-        final double DESCONTO = 0.10;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite seu nome: ");
+        String nome = sc.nextLine();
+        System.out.print("Digite sua idade: ");
+        int idade = sc.nextInt();
+        System.out.print("Digite sua altura: ");
+        double altura = sc.nextDouble();
+        System.out.println("Meu nome é: " + nome);
+        System.out.println("Tenho: " + idade + " anos");
+        System.out.printf("Tenho %.2fm", altura);
 
-        double somaTotal = produto * qtdProduto;
-        double valorDoDesconto = somaTotal * DESCONTO;
-        double valoComDesconto = somaTotal - valorDoDesconto;
-
-        System.out.printf("Total sem desconto: R$ %.2f%n" , somaTotal);
-        System.out.printf("Desconto de 10%%: R$ %.2f%n", valorDoDesconto);
-        System.out.printf("Total com desconto: R$ %.2f%n ", valoComDesconto);
-
+        sc.close();
     }
 
 }
