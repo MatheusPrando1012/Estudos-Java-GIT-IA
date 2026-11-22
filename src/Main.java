@@ -3,19 +3,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite dois numeros inteiros: ");
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
+        System.out.print("Digite o preço de um produto: ");
+        double preco = sc.nextDouble();
+        System.out.print("Digite a quantidade de itens comprados: ");
+        int quantidade = sc.nextInt();
 
-        int soma = num1 + num2;
-        int sub = num1 - num2;
-        int mult = num1 * num2;
-        int div = num1 / num2;
+        double precototal = preco * quantidade;
+        final double DESCONTO = 0.10;
+        double economia = precototal * DESCONTO;
+        double valorFinal = precototal - economia;
 
-        System.out.println("Resultado da soma: " + soma);
-        System.out.println("Resultado da subtração: " + sub);
-        System.out.println("Resultado da multiplicação: " + mult);
-        System.out.println("Resultado da divisão: " + div);
+        System.out.printf("Preço total: R$ %.2f%n", precototal);
+        System.out.printf("Preço total com o desconto: R$ %.2f%n", valorFinal);
+        System.out.printf("Dinheiro salvo: R$ %.2f%n", economia);
 
         sc.close();
     }
